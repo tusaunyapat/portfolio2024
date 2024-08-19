@@ -1,0 +1,39 @@
+/* styles/Home.module.css */
+
+.container {
+  height: 80vh;
+  width: 90%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  /* background-color: ; */
+  /* Hide scrollbar for Webkit browsers */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.snapContainer {
+  height: 80vh;
+  scroll-snap-type: y mandatory;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+.image {
+  width: 90%;
+
+  object-fit: cover;
+}

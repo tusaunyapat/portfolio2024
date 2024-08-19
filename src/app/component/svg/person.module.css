@@ -1,0 +1,23 @@
+.person svg path {
+  stroke-dasharray: 150px;
+  animation: about_move 2s linear forwards;
+  stroke-opacity: 1;
+  scale: 0.19;
+}
+
+@keyframes about_move {
+  0% {
+    stroke-dashoffset: 500px;
+    /* opacity: 0; */
+    stroke-opacity: 1;
+    stroke-linejoin: round;
+  }
+  100% {
+    stroke-dashoffset: 150px;
+    stroke-dasharray: 1200px;
+    /* opacity: 1; */
+
+    stroke-opacity: 1;
+    stroke-linejoin: round;
+  }
+}

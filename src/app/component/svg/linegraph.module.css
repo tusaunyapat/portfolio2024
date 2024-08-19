@@ -1,0 +1,29 @@
+.linegraph svg path {
+  stroke-dasharray: 50px;
+  animation: about_move 2s linear forwards infinite;
+  stroke-opacity: 0;
+  scale: 1.5;
+}
+.linegraph svg line {
+  stroke-dasharray: 100px;
+  animation: about_move 2s linear forwards infinite;
+  stroke-opacity: 0;
+  scale: 1.5;
+}
+
+@keyframes about_move {
+  0% {
+    stroke-dashoffset: 50px;
+    /* opacity: 0; */
+    stroke-opacity: 1;
+    stroke-linejoin: round;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+    stroke-dasharray: 45px;
+    /* opacity: 1; */
+
+    stroke-opacity: 1;
+    stroke-linejoin: round;
+  }
+}
