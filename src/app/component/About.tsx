@@ -64,7 +64,7 @@ export default function About() {
               <span className="text-yellow font-bold">
                 software engineering
               </span>
-              . Currently in my third year, I've gained experience in data
+              . Currently in my third year, I’ve gained experience in data
               structures, algorithms, software and hardware development, as well
               as <span className="text-red font-bold">machine learning</span> .
               I’m passionate about creating innovative web solutions and

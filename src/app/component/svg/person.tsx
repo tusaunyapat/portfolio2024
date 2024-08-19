@@ -1,7 +1,7 @@
 import style from "./person.module.css";
 import { useInView } from "react-intersection-observer";
 
-export default function person() {
+export default function Person() {
   const { ref, inView } = useInView({
     triggerOnce: false, // Ensure the animation happens only once
     threshold: 0.1, // Adjust based on when you want the animation to trigger

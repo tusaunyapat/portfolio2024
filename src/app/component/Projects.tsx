@@ -92,7 +92,10 @@ export default function Projects() {
               visible: { opacity: 1, y: 0 },
             };
             return (
-              <div className="flex flex-col my-10 mx-4 max-w-6xl lg:flex-row justify-start items-center  border-b border-white/30 pb-2 lg:border-none">
+              <div
+                key={index}
+                className="flex flex-col my-10 mx-4 max-w-6xl lg:flex-row justify-start items-center  border-b border-white/30 pb-2 lg:border-none"
+              >
                 <motion.div
                   key={index}
                   className={` w-full lg:w-3/5 flex items-center justify-center `}
