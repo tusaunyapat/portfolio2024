@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import style from "../component/Projects.module.css";
+import { StaticImageData } from "next/image"; // Or similar import for your bundler
 
 import Image from "next/image";
 
@@ -8,7 +9,7 @@ export interface TimelineItem {
   stack: string[];
   position: string;
   description: string;
-  pic: string; // Assuming 'pic' is a path to an image or an imported image
+  pic: string | StaticImageData; // Assuming 'pic' is a path to an image or an imported image
 }
 
 export default function Timeline({ data }: { data: TimelineItem[] }) {
