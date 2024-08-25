@@ -30,7 +30,7 @@ export default function Sidebar() {
     <li
       className={`${setActiveMenu(
         href
-      )} px-2 sm:px-4 py-2 text-base rounded-md hover:bg-base/15 font-bold`}
+      )} px-2 sm:px-4 py-2 text-[#242E3A] rounded-md hover:bg-base/15 font-bold`}
       onClick={() => setCurrent(href)}
     >
       <Link href={href} className="flex flex-row items-center">
