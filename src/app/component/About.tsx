@@ -5,7 +5,7 @@ import { useState } from "react";
 import style from "../component/About.module.css";
 import Graph from "./svg/graph";
 import Linegraph from "./svg/linegraph";
-import Person from "./svg/Person";
+import Person from "./svg/person";
 export default function About() {
   const controls = useAnimation();
   const ref = useRef<HTMLDivElement | null>(null);
