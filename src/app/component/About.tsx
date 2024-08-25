@@ -5,7 +5,7 @@ import { useState } from "react";
 import style from "../component/About.module.css";
 import Graph from "./svg/graph";
 import Linegraph from "./svg/linegraph";
-import Person from "./svg/person";
+import Person from "./svg/Person";
 export default function About() {
   const controls = useAnimation();
   const ref = useRef<HTMLDivElement | null>(null);
@@ -36,7 +36,7 @@ export default function About() {
   }, [controls]);
 
   return (
-    <div className="h-screen w-full mt-2 flex items-center p-2 lg:p-6  py-16 overflow-hidden">
+    <div className="h-screen w-full mt-2 flex items-center p-2 lg:p-6  py-16 overflow-hidden lg:justify-center">
       <div className="h-full flex flex-col  lg:flex-row items-center justify-center ">
         <div className="flex flex-col justify-center gap-10 px-2 w-full lg:w-8/12 items-center sm:items-start max-w-[50rem]">
           <motion.p
@@ -44,18 +44,22 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             animate={controls}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className={`${style.topic} text-[2rem] sm:text-[3rem] font-bold text-white flex items-center justify-center w-full`}
+            className={`${style.topic} text-[2rem] sm:text-[3rem] font-bold text-base flex items-center justify-center w-full`}
           >
-            <span className="text-white/10">{"<"}</span>
+            <span className="text-base/10 text-[2rem] sm:text-[3rem]">
+              {"<"}
+            </span>
             About &nbsp;
-            <span className="text-white/10">{" />"}</span>
+            <span className="text-base/10 text-[2rem] sm:text-[3rem]">
+              {" />"}
+            </span>
           </motion.p>
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 20 }}
             animate={controls}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className={`${style.topic} text-md items-center flex flex-row justify-start  text-white `}
+            className={`${style.topic} text-md items-center flex flex-row justify-start  text-base `}
           >
             <p className="text-sm sm:text-xl text-justify  px-1 sm:px-10  lg:px-12">
               Hi! I’m Tus, a Computer Engineering student with a keen interest

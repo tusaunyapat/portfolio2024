@@ -84,7 +84,7 @@ export default function Experience() {
   }, [controls]);
 
   return (
-    <div className="min-h-screen  w-full p-2 lg:p-6  pt-16  ">
+    <div className="min-h-screen  w-full p-2 lg:p-6  pt-16  lg:my-24">
       <div className="h-full flex flex-col  items-center justify-center ">
         <div className="flex flex-col justify-center  px-2 w-full lg:w-8/12 items-center sm:items-start ">
           <motion.p
@@ -92,23 +92,28 @@ export default function Experience() {
             initial={{ opacity: 0, y: 20 }}
             animate={controls}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className={` text-[2rem] sm:text-[3rem] font-bold text-white flex items-center justify-center w-full `}
+            className={` text-[2rem] sm:text-[3rem] font-bold text-base flex items-center justify-center w-full `}
           >
-            <span className="text-white/10">{"<"}</span> Experience &nbsp;
-            <span className="text-white/10">{" />"}</span>
+            <span className="text-base/10 text-[2rem] sm:text-[3rem]">
+              {"<"}
+            </span>{" "}
+            Experience &nbsp;
+            <span className="text-base/10 text-[2rem] sm:text-[3rem]">
+              {" />"}
+            </span>
           </motion.p>
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 20 }}
             animate={controls}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className={` text-md items-center flex flex-col justify-start  text-white px-3 `}
+            className={` text-md items-center flex flex-col justify-start  text-base px-3 `}
           >
-            <h1 className="text-2xl text-white/50 text-left w-full px-4 py-2 font-bold">
+            <h1 className="text-2xl text-base/50 text-left w-full px-4 py-2 font-bold">
               Internship
             </h1>
             <Timeline data={timelineItems} />
-            <h1 className="text-2xl text-white/50 text-left w-full px-4 py-2 font-bold mt-10">
+            <h1 className="text-2xl text-base/50 text-left w-full px-4 py-2 font-bold mt-10">
               Education
             </h1>
             <Timeline data={educationTimeline} />

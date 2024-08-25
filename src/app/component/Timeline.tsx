@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import style from "../component/Projects.module.css";
 import { StaticImageData } from "next/image"; // Or similar import for your bundler
 
 import Image from "next/image";
@@ -23,7 +22,7 @@ export default function Timeline({ data }: { data: TimelineItem[] }) {
       {data.map((item, index) => (
         <motion.li
           key={index}
-          className=" bg-black/10 p-4 w-full mb-4 rounded-md"
+          className=" bg-base/10 p-4 w-full mb-4 rounded-md"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false }}
@@ -39,18 +38,18 @@ export default function Timeline({ data }: { data: TimelineItem[] }) {
           <time className="mb-1 text-sm font-normal leading-none text-blue my-2">
             {item.date}
           </time>
-          <h3 className="text-lg font-semibold  text-white">{item.position}</h3>
+          <p className="text-xl font-bold  text-[#242E3A]">{item.position}</p>
           <ul className="flex flex-row py-1 ">
             {item.stack.map((stack, index) => (
               <li
                 key={index}
-                className="text-blue/50 border border-blue/50 px-2 py-1 mr-2 rounded-sm text-xs"
+                className="text-blue/80 border-2 text-semibold border-blue/80 px-2 py-1 mr-2 rounded-sm text-xs"
               >
                 {stack}
               </li>
             ))}
           </ul>
-          <div className="text-sm text-white/50 font-normal text-justify">
+          <div className="text-sm text-base/50 font-normal text-justify">
             {item.description}
           </div>
         </motion.li>

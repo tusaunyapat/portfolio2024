@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -22,7 +22,7 @@ html {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #242e3a;
+  background: #ffffff;
   margin: 0 auto;
   padding: 0;
 }

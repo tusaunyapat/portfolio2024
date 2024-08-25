@@ -4,6 +4,7 @@
   animation: move 2s linear forwards;
   transform: scale(0.7);
   /* fill: transparent; */
+
   stroke-opacity: 0;
 }
 

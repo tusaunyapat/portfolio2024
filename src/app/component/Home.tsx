@@ -6,7 +6,7 @@ export default function Home() {
       <div className="flex flex-col h-auto">
         {/* <Name /> */}
         <div
-          className={`${style.path} z-9 lg:pl-16  m-0 h-[10rem] sm:h-[20rem] lg:h-[30rem] w-[16rem] sm:w-[32rem] lg:w-[56rem] flex justify-start scale-125 ml-8`}
+          className={`${style.path} z-9 lg:pl-16  m-0 h-[10rem] sm:h-[20rem] lg:h-[30rem] w-[16rem] sm:w-[32rem] lg:w-[56rem] flex justify-start scale-150 lg:scale-125 ml-8`}
         >
           <svg
             viewBox="0 0 214 40"
@@ -14,7 +14,7 @@ export default function Home() {
             xmlns="http://www.w3.org/2000/svg"
             className="w-full h-full flex flex-row"
             stroke-width="1"
-            stroke="white"
+            stroke="#242E3A"
           >
             <path
               d="M194.78 5.9802V0.90918H218.672V5.9802H209.766V30.0001H203.687V5.9802H194.78Z"
@@ -111,7 +111,7 @@ export default function Home() {
           </svg>
         </div>
         <div
-          className={`${style.textTranslation} flex flex-col lg:flex-row  lg:gap-0 text-white justify-between`}
+          className={`${style.textTranslation} flex flex-col lg:flex-row  lg:gap-0 text-base justify-between`}
         >
           <div className="flex flex-col">
             <p className="font-bold text-xs">Computer Engineering</p>

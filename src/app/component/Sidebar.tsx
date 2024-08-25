@@ -15,7 +15,7 @@ export default function Sidebar() {
   const [current, setCurrent] = useState<string | undefined>("#home");
 
   const setActiveMenu = (path: string) => {
-    return path === current ? "text-yellow bg-yellow/10" : "text-white";
+    return path === current ? "text-yellow bg-base/10" : "text-white";
   };
 
   const MenuItem = ({
@@ -30,7 +30,7 @@ export default function Sidebar() {
     <li
       className={`${setActiveMenu(
         href
-      )} px-2 sm:px-4 py-2 text-white rounded-md hover:bg-white/10`}
+      )} px-2 sm:px-4 py-2 text-base rounded-md hover:bg-base/15 font-bold`}
       onClick={() => setCurrent(href)}
     >
       <Link href={href} className="flex flex-row items-center">
@@ -41,7 +41,7 @@ export default function Sidebar() {
   );
 
   return (
-    <nav className=" fixed w-full p-2  bg-gradient-to-b from-black to-base items-center justify-center shadow-md shadow-base z-0">
+    <nav className=" fixed w-full p-2  bg-gradient-to-b from-[#ededed] to-white items-center justify-center shadow-md shadow-gray z-0">
       <div className=" h-full w-full ">
         <ul
           className={`flex flex-row justify-center p-2 gap-6 h-full rounded-md sm:rounded-2xl  text-sm  items-center `}
