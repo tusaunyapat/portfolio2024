@@ -41,7 +41,7 @@ export default function Sidebar() {
   );
 
   return (
-    <nav className=" fixed w-full p-2  bg-gradient-to-b from-[#ededed] to-white items-center justify-center shadow-md shadow-gray z-0">
+    <nav className=" fixed w-full p-2   items-center justify-center shadow-md shadow-gray z-0">
       <div className=" h-full w-full ">
         <ul
           className={`flex flex-row justify-center p-2 gap-6 h-full rounded-md sm:rounded-2xl  text-sm  items-center `}
